@@ -1,0 +1,46 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+
+   <h4> Contact us</h4>
+    <p>Questions, thoughts or opinions? Please use the form below to let us know what you're thinking.</p>
+<section class="consect">
+  <div class="boxape">
+  <Address>
+    <i class="fas fa-location-arrow"></i>
+    <b>Address</b>
+    Sreeguru towers,<br>Second floor,<br> Gopuram road, opp.<br> Union bank of India, <br>Puttaparthi,<br> Andhra Pradesh 515134
+  </Address>
+  __________________________________<br><br>
+    <i class="fas fa-phone-square-alt"></i>
+     <b >Phone</b>:+91-8735208641 <br><br>
+    <b>Help line</b>:011-23978046 <br>________________________________<br><br>
+    <i class="fas fa-envelope">email</i>
+    <b>E-mail:</b>surettust234@gmail.com
+  </div>
+</section> 
+<section class="consecr">
+  {% if submitted %}
+      <p class="success">
+        Your message was submitted successfully. Thank you.</p>
+
+  {% else %}
+      <form action="" method="POST" novalidate>
+      <table>
+          {{ form.as_table }}
+          <tr>
+              <td>&nbsp;</td>
+              <td><input class=btn, type="submit" value="submit"></td>
+          </tr>
+      </table>
+      {% csrf_token %}
+      </form>
+  {% endif %}
+</section>
+{% endblock content %}
+                          <!---<input type="text" id="fname" name="firstname" placeholder="Your First name">
+                          <input type="text" id="lname" name="lastname" placeholder="Your last name">
+                          <input type="text" id="email" name="email" placeholder="Your Mail-Id">
+                          <input type="text" id="phnumber" name="Mobileno" placeholder="Your Mobile Number">
+                          <textarea rows="4" cols="50" name="comment" form="usrform">Enter message...</textarea>
+                          <input type="submit" value="Submit">-->
+

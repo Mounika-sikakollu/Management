@@ -1,0 +1,16 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+       <section>
+    <h4> Feedback</h4>
+    <p>Let us know what you think about our hospital as well as the doctor you consulted.</p>
+    <form action="" id="usrform" class="box">
+    <input type="text" id="fname" name="firstname" placeholder="Your First name">
+    <input type="text" id="email" name="email" placeholder="Your Mail-Id">
+    <input type="text" id="phnumber" name="Mobileno" placeholder="Your Mobile Number">
+    <input type="text" id="dname" name="doctor" placeholder="Consulted Doctor Name">
+    <input type="text" id="tservice" name="typeofservices" placeholder="Type of service">
+    <textarea rows="4" cols="50" name="comment" form="usrform" spellcheck="false">Enter message...</textarea>
+    <input type="submit" value="Submit">
+  </form>
+</section>
+{% endblock content %}

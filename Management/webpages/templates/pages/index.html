@@ -1,0 +1,285 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+    <section class="home">
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="images/img1.jpg" alt="">
+                <div class="text">Caption Text</div>
+              </div>
+                <div>
+                <span class="dot" onclick="currentSlide(1)"></span>
+              </div>
+        </div>
+        <div class="content">
+            <h3>we take care of your healthy life</h3>
+            <p>Maintaining good health will ultimately lead to a happy mind which is more valuable than any precious gift in today’s life. 
+                Having a healthy life must be a part of everyone’s lifestyle.
+                If one has a healthy and happy mind, then one will always stay motivated towards one’s work and will be productive at work.</p>
+            <a href="#" class="btn">Learn More </a>
+        </div>
+    </section>
+    <!-- home section ends -->
+
+    <!-- Table section starts  -->
+<section class="Table-container">
+    <div class="cell">
+        <div class="cell">
+            <th>
+           <td><p class="tooltip">doctors at work<span class="tooltiptext">Top 5 doctors in our hospital.
+                1. Dr. Siddhartha Mukherjee – Biologist.
+                2. Dr. Naresh Trehan – cardiothoracic surgeon.
+                3. Dr. Sudhansu Bhattacharyya – Cardiac surgeon.
+                4. Dr.  Surbhi Anand – Endodontist.
+                5. Dr. Ashish Sabharwal- Urologist.
+                <a href="#">Learn More</a></span></p></td></th>
+        </div>
+    
+        <div class="cell">
+            <th>
+           <td><p class="tooltip">satisfied patients<span class="tooltiptext">Patients and staff satisfaction is an important component of the health care industry.About the performance of staff, appointment system,behavior of staff,support service and any other suggestions of patients.  <a href="#">Learn More</a></span></p></td></th>
+        </div>
+        <div class="cell">
+            <th>
+           <td>
+            <p class="tooltip">bed facility<span class="tooltiptext"> A hospital bed specially designed for
+                hospitalized patients or others in need of some form of health care. These beds have special features both for the 
+                comfort and well-being of the patient and for the convenience of health care workers.
+        <a href="#">Learn More</a></span></p></td></th>
+        </div>
+    
+        <div class="cell">
+            <th>
+           <td>
+            <p class="tooltip">available hospitals<span class="tooltiptext">Available hospital are   1. Apollo health city
+             2. Kims- Krishna Institute Of Medical Sciences
+                3. Sunshine hospitals
+                4. Continental hospitals
+                5. Medicover Hospitals
+                <a href="#">Learn More</a>  
+            </span></p></td></th>
+        </div>
+</section>
+<!-- icons section ends -->
+
+<!-- doctors section starts -->
+
+<section class="doctors" id="doctors">
+
+    <h1 class="heading"> our <span>doctors</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/doctor1.jpg" alt="">
+            <h3>ABC</h3>
+            <span>expert doctor</span>
+            <div class="share" class="box">
+                <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/doctor2.jpg" alt="">
+            <h3>DEF</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/doctor3.jpg" alt="">
+            <h3>GHI</h3>
+            <span>expert doctor</span>
+            <div class="share">
+            <a href="#" class="fab fa-facebook-f"></a>
+                <a href="#" class="fab fa-twitter"></a>
+                <a href="#" class="fab fa-instagram"></a>
+                <a href="#" class="fab fa-linkedin"></a>
+                
+            </div>
+        </div>
+
+        <div class="box">
+            <img src="images/doctor4.jpg" alt="">
+            <h3>JKL</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    
+                </div>
+        </div>
+
+        <div class="box">
+            <img src="images/doctor5.jpg" alt="">
+            <h3>MNO</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    
+                </div>
+        </div>
+        <div class="box">
+            <img src="images/doctor5.jpg" alt="">
+            <h3>PQR</h3>
+            <span>expert doctor</span>
+            <div class="share">
+                <a href="#" class="fab fa-facebook-f"></a>
+                    <a href="#" class="fab fa-twitter"></a>
+                    <a href="#" class="fab fa-instagram"></a>
+                    <a href="#" class="fab fa-linkedin"></a>
+                    
+                </div>
+        </div>
+    </div>
+
+</section>
+
+<!-- doctors section ends -->
+<!-- appointmenting section starts  -->
+
+<section class="appointment" id="appointment">
+
+    <h1 class="heading"> <span>appointment</span> now </h1>    
+
+    <div class="row">
+
+        <div class="image">
+            <img src="images/appointment.jpg" alt="">
+        </div>
+      <div>  
+            <h3>Make appointment</h3>
+        <form >
+                  <input type="text"name="name" placeholder="your name" class="box">
+                  <input type="email"name="email" placeholder="your email" class="box">     
+                  <input type="number"name="number" placeholder="your number" class="box">        
+                  <input type="date"name="date" class="box">                                  
+                  <input type="submit" name="submit" value="appointment now" class="btn"> 
+     </form></div>
+</section>
+
+<!-- appointmenting section ends -->
+<!-- review section starts --> 
+
+<section class="review" id="review">
+    
+    <h1 class="heading"> client's <span>review</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="images/doc.png" alt="">
+            <h3>ABC</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+        <div class="box">
+            <img src="images/doc.png" alt="">
+            <h3>DEF</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+
+        <div class="box">
+            <img src="images/doc.png" alt="">
+            <h3>GHI</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+        
+        <div class="box">
+            <img src="images/doc.png" alt="">
+            <h3>JKL</h3>
+            <div class="stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam sapiente nihil aperiam? Repellat sequi nisi aliquid perspiciatis libero nobis rem numquam nesciunt alias sapiente minus voluptatem, reiciendis consequuntur optio dolorem!</p>
+        </div>
+    </div>
+
+</section>
+
+<!-- review section ends -->
+<!-- footer section starts-->  
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>quick links</h3>
+            <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
+            <a href="#about"> <i class="fas fa-chevron-right"></i> about </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
+            <a href="#doctors"> <i class="fas fa-chevron-right"></i> doctors </a>
+            <a href="#appointment"> <i class="fas fa-chevron-right"></i> appointment </a>
+            <a href="#review"> <i class="fas fa-chevron-right"></i> review </a>
+            <a href="contact.html"> <i class="fas fa-chevron-right"></i>contactus </a>
+        </div>
+
+        <div class="box">
+            <h3>our services</h3>
+            <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> diagnosis </a>
+            <a href="#"> <i class="fas fa-chevron-right"></i> ambulance service </a>
+        </div>
+
+        <div class="box">
+            <h3>appointment info</h3>
+            <a href="#"> <i class="fas fa-phone-square-alt"></i> +8801688238801 </a>
+            <a href="#"> <i class="fas fa-envelope"></i> mounika29@gmail.com </a>
+            <a href="#"> <i class="fas fa-map-marker-alt"></i> hyderabad </a>
+        </div>
+
+        <div class="box">
+            <h3>follow us</h3>
+            <a href="#"> <i class="fab fa-facebook"></i> facebook </a>
+            <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
+            <a href="#"> <i class="fab fa-instagram"></i> instagram </a>
+            <a href="#"> <i class="fab fa-linkedin"></i> linkedin </a>
+            <a href="#"> <i class="fab fa-pinterest"></i> pinterest </a>
+        </div>
+
+    </div>
+</section>
+<!-- footer section ends -->
+{% endblock content %}

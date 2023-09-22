@@ -14,11 +14,6 @@
     </head>
  <body>
  <nav class="navbar navbar-expand justify-content-between navbar1-custom">
-   <ul class="navbar-nav list-group-item nav-item1 ">
-     <li>
-      <i class="fas fa-phone-square-alt list-group-item1"> +8801688238801</i>
-      <i class="fas fa-envelope list-group-item2"> mounika29@gmail.com </i>
-     </li></ul>
      <ul class="navbar-nav" class=" justify-content-center">
      <li class="nav-item2">
       <i class="fab fa-facebook-f"></i>
@@ -31,16 +26,16 @@
         <a href="#linkedin"></a>
      </li></ul>
      <ul class="navbar-nav justify-content-end">
-      <li class="btn-toolbar">
-       <a class="nav-link"href="{% url 'contact' %}"> <button class="btn-outline-info">Contact Us</button></a>
+      <li class="nav-item3">
+       <a class="nav-link"href="{% url 'contact' %}" class="btn-info">Contact Us</a>
      </li></ul></nav>
  <nav class="navbar navbar-expand  justify-content-between navbar-custom">
   <ul class=" navbar-nav"> 
-    <li><img src="./heart.png" id="logo" alt="heart.png" ></li></ul>
+    <li><img src="{% static 'media/images/heart.png' %}" id="logo" alt="heart.png" ></li></ul>
     <ul class="navbar-nav"class="justify-content-center">
     <li><h2 class="font-weight-bold heading">SURE Trust</h2></li>
   </ul>
-   <ul class="navbar-nav" class="justify-content-end">
+   <ul class="navbar-nav" class="justify-content-end-flex">
      <li class="nav-item">
        <a class="nav-link"  href="{% url 'index' %}">Home </a>
      </li>
@@ -51,17 +46,17 @@
        <a class="nav-link" href="{% url 'services' %}">Services</a>
      </li>
      <li class="nav-item">
-      <a class="nav-link" href="{% url 'feedback' %}">Feedback</a>
-    </li>
-    <li class="nav-item">
       <a class="nav-link" href="{% url 'update' %}">Update</a>
     </li>
-    <li class="nav-item">
-      <a class="nav-link" href="{% url 'login' %}">Login</a>
-    </li>
+    {% if user.is_authenticated %}
+     <li class="nav-item"><a class="nav-link" href="{% url 'feedback' %}">Feedback</a></li>
+     <li class="nav-item"><a class="nav-link" href="{% url 'logout' %}">Logout</a></li>
+    {% else %}
+    <li class="nav-item"><a class="nav-link" href="{% url 'login' %}">Login</a></li>
+    {% endif %}
    </ul>
  </nav>
- 
+ <div class="menu-btn" class="fas fa-bars"></div>
  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>

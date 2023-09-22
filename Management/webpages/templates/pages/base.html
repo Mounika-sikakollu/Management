@@ -14,10 +14,6 @@
 
       <header class="header">
         <nav class="navbar-one flex">
-           <div class="left flex">
-           <div><i class="fas fa-phone-square-alt"> + 8801688238801</i></div>
-          <div><i class="fas fa-envelope"> mounika29@gmail.com </i></div>
-          </div>
            <div class="right flex">
                  <div><i class="fab fa-facebook-f"></i>
                    <a href="#facebook"></a></div>
@@ -28,11 +24,11 @@
                  <div><i class="fab fa-linkedin"> </i> 
                    <a href="#linkedin"></a></div>
            </div>
-          <i class="fas fa-contact"><a href="{% url 'contact' %}" class="contact"> contact us</a></i>
+          <a href="{% url 'contact' %}" class="contact"> Contact Us</a></i>
         </nav>
         <nav class="navbar-second flex">
          <ol class="flex">
-           <li><img src="./heart.png" id="logo" alt="heart.png"></li>
+           <li><img src="{% static 'media/images/heart.png' %} " id="logo" alt="heart.png"></li>
            <li><h2>SURE Trust</h2></li>
          </ol>
          <ul class="flex">

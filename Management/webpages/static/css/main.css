@@ -12,7 +12,6 @@
      outline:none;
      border:none;
      transition: all 0.2s ease-out;
-     text-transform: capitalize;
      text-decoration: none;
  }
  html{
@@ -62,9 +61,8 @@
     color: var(--PVR);
     background:#fff;
     margin-left: 1rem;
- 
  }
- 
+
  nav{
     padding: 0 0;
     width:100%;
@@ -84,23 +82,25 @@
  i{
     line-gap-override:3rem;
  }
- .left >div{
-    margin-left:100px;
- }
+
  .right div{
-    margin-left:10px;
+    margin-left:6px;
+    position: relative;
+    left:1260px;
+    font-size: 2rem;
  }
- .left >div:hover,
+ 
  .right >div:hover{
     color:black;
     transition:all 0.5s;
  }
  .contact{
-    border:2px solid #DB7093;
+    color: palevioletred;
     margin-right:20px;
+    font-size: 1.9rem;
  }
  .contact:hover{
- color: aqua;
+ color:lightblue;
  }
  .navbar-second{
    height:75px;
@@ -111,7 +111,7 @@
  }
     #logo {
     border-radius:50px;
-    padding-left: 0%;
+    padding-left:0%;
     height: 50px;
     width: 50px;
     display: flex;
@@ -160,13 +160,63 @@
     position: relative;
     margin: auto;
   }
- 
-  .mySlides img{
-    height:450px;
-    width:550px;
-    padding-bottom: 0 0;
-  }
- 
+  /*slidebar*/
+.slider-frame{
+   overflow: hidden;
+   height: 450px;
+   width: 600px;
+   margin-left: -80px;
+   margin-top: 20px;
+   margin-bottom: 40px;
+}
+@keyframes slide_animation{
+   0% {left:0px;}
+   10% {left:0px;}
+   20% {left:1200px;}
+   30% {left:1200px;}
+   40% {left: 2400px;}
+   50% {left: 2400px;}
+   60% {left: 1200px;}
+   70% {left: 1200px;}
+   80% {left: 0px;}
+   90% {left: 0px;}
+   100% {left:0px;}
+}
+@-webkit-keyframes slide_animation{
+   0% {left:0px;}
+   10% {left:0px;}
+   20% {left:1200px;}
+   30% {left:1200px;}
+   40% {left: 2400px;}
+   50% {left: 2400px;}
+   60% {left: 1200px;}
+   70% {left: 1200px;}
+   80% {left: 0px;}
+   90% {left: 0px;}
+   100% {left:0px;}
+}
+.slide-images{
+   width: 3600px;
+   height: 800px;
+   margin: 0 0 0 -2400px;
+   position: relative;
+   -webkit-animation-name: slide_animation;
+   animation-name: slide_animation;
+   -webkit-animation-duration: 33s;
+   animation-duration: 33s;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   animation-direction: alternate;
+}
+.img-container{
+   height: 800px;
+   width: 1000px;
+   position: relative;
+   float: left;
+}
+
+/**/
   
   /* Caption text */
   .text {
@@ -317,6 +367,7 @@
  
  .about .row .image img{
      width: 100%;
+     height: 50%;
  }
  
  .about .row .content{
@@ -375,6 +426,76 @@
     font-size: 1.4rem;
     line-height: 2;
  }
+ /* services page */
+.ser{
+   height: 150px;
+   width: 100%;
+   
+   margin-top: 20px;
+   justify-content: center;
+   align-items: center;
+   margin-left: 100px;
+}
+.myBtn_multi{
+  color:black;
+  background-color: #f5c1c3;
+  font-size: 2rem;
+  border:1px solid rgb(183,209,231) ;
+  height: 50px;
+  width:25%;
+  margin: 10px 20px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  }
+  .myBtn_multi:hover{
+   background-color: rgb(183,209,231);
+   transform: scale(1.0);
+   box-shadow:.5rem .5rem .5rem rgb(155, 155, 154, .2);
+ }
+ .modal {
+   padding-top: 30px; /* Location of the box */
+   left: 0;
+   top: 0;
+   
+ }
+
+ .modal_multi{
+   height: 460px;
+   width: 80.5%;
+   border: 3px solid rgb(183,209,231);
+   margin-top: 10px;
+   margin-left: 24px;
+   
+ }
+ 
+
+ .modal-content {
+   background-color: #fefefe;
+   margin: auto;
+   padding: 2rem 2rem;
+   display: none;
+   width: 98%;
+   font-size:1.6rem;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+ }.modal-content.table {
+   padding: 5px 5px;
+   
+ }
+   .modal-content,td, th {
+     
+     text-align: center;
+     padding: 5px;
+   }
+   tr:nth-child(even) {
+     background-color: #dddddd;
+   }
+ 
+
+
  /* services section ends   */
  
  /*  doctors section starts  */
@@ -619,25 +740,18 @@
  
  }
 
- /* contact.css */
- .consect{
-    background-color: white;
- }
+ /* contact.css
  .consecr{
-    background-color:rgb(183, 209, 231) ;
-    height: 90px;
-    width:98%;
+   border:2px solid palevioletred;
+   height: 90px;
+   width:98%;
+   position: relative;
+   right:150px;
  }
-  h4{
-    color:palevioletred;
-    font-size: 4rem;
-    margin-top: 10px;
-    position: relative;
-    right:50px;
-}
 p{
     padding-top:2px;;
     font-size:2rem;
+    padding-left: 20px;
 }
 .boxape
    {
@@ -696,4 +810,4 @@ input[type=text],select {
      border-radius: 4px; 
      display:inline-block;
      border:1px solid palevioletred;
-  }
+  }*/

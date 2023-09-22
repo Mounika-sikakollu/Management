@@ -1,17 +1,24 @@
 {% extends 'pages/base.html' %}
+{% load static %}
 {% block content %}
     <section class="home">
         <div class="slideshow-container">
-            <div class="mySlides fade">
-                <img src="images/img1.jpg" alt="">
-                <div class="text">Caption Text</div>
-              </div>
-                <div>
-                <span class="dot" onclick="currentSlide(1)"></span>
-              </div>
+              <div class="slider-frame">
+                <div class="slide-images">
+                        <div class="img-container">
+                            <img src="{% static 'media/images/img1.jpg' %}" alt="img1">
+                        </div>
+                        <div class="img-container">
+                            <img src="{% static 'media/images/img4.jpg' %}" alt="img1">
+                        </div>
+                        <div class="img-container">
+                            <img src="{% static 'media/images/img 3.jpg' %}" alt="img1">
+                        </div>
+                </div>
+            </div>
         </div>
         <div class="content">
-            <h3>we take care of your healthy life</h3>
+            <h3>We Take Care Of Your Healthy Life</h3>
             <p>Maintaining good health will ultimately lead to a happy mind which is more valuable than any precious gift in today’s life. 
                 Having a healthy life must be a part of everyone’s lifestyle.
                 If one has a healthy and happy mind, then one will always stay motivated towards one’s work and will be productive at work.</p>
@@ -25,7 +32,7 @@
     <div class="cell">
         <div class="cell">
             <th>
-           <td><p class="tooltip">doctors at work<span class="tooltiptext">Top 5 doctors in our hospital.
+           <td><p class="tooltip">Doctors at work<span class="tooltiptext">Top 5 doctors in our hospital.
                 1. Dr. Siddhartha Mukherjee – Biologist.
                 2. Dr. Naresh Trehan – cardiothoracic surgeon.
                 3. Dr. Sudhansu Bhattacharyya – Cardiac surgeon.
@@ -36,12 +43,12 @@
     
         <div class="cell">
             <th>
-           <td><p class="tooltip">satisfied patients<span class="tooltiptext">Patients and staff satisfaction is an important component of the health care industry.About the performance of staff, appointment system,behavior of staff,support service and any other suggestions of patients.  <a href="#">Learn More</a></span></p></td></th>
+           <td><p class="tooltip">Satisfied patients<span class="tooltiptext">Patients and staff satisfaction is an important component of the health care industry.About the performance of staff, appointment system,behavior of staff,support service and any other suggestions of patients.  <a href="#">Learn More</a></span></p></td></th>
         </div>
         <div class="cell">
             <th>
            <td>
-            <p class="tooltip">bed facility<span class="tooltiptext"> A hospital bed specially designed for
+            <p class="tooltip">Bed facility<span class="tooltiptext"> A hospital bed specially designed for
                 hospitalized patients or others in need of some form of health care. These beds have special features both for the 
                 comfort and well-being of the patient and for the convenience of health care workers.
         <a href="#">Learn More</a></span></p></td></th>
@@ -50,7 +57,7 @@
         <div class="cell">
             <th>
            <td>
-            <p class="tooltip">available hospitals<span class="tooltiptext">Available hospital are   1. Apollo health city
+            <p class="tooltip">Available hospitals<span class="tooltiptext">Available hospital are   1. Apollo health city
              2. Kims- Krishna Institute Of Medical Sciences
                 3. Sunshine hospitals
                 4. Continental hospitals
@@ -65,12 +72,12 @@
 
 <section class="doctors" id="doctors">
 
-    <h1 class="heading"> our <span>doctors</span> </h1>
+    <h1 class="heading"> Our <span>Doctors</span> </h1>
 
     <div class="box-container">
 
         <div class="box">
-            <img src="images/doctor1.jpg" alt="">
+            <img src="{% static 'media/images/doctor1.jpg' %}" alt="">
             <h3>ABC</h3>
             <span>expert doctor</span>
             <div class="share" class="box">
@@ -83,7 +90,7 @@
         </div>
 
         <div class="box">
-            <img src="images/doctor2.jpg" alt="">
+            <img src="{% static 'media/images/doctor2.jpg' %}" alt="">
             <h3>DEF</h3>
             <span>expert doctor</span>
             <div class="share">
@@ -96,7 +103,7 @@
         </div>
 
         <div class="box">
-            <img src="images/doctor3.jpg" alt="">
+            <img src="{% static 'media/images/doctor3.jpg' %}" alt="">
             <h3>GHI</h3>
             <span>expert doctor</span>
             <div class="share">
@@ -109,7 +116,7 @@
         </div>
 
         <div class="box">
-            <img src="images/doctor4.jpg" alt="">
+            <img src="{% static 'media/images/doctor4.jpg' %}" alt="">
             <h3>JKL</h3>
             <span>expert doctor</span>
             <div class="share">
@@ -122,7 +129,7 @@
         </div>
 
         <div class="box">
-            <img src="images/doctor5.jpg" alt="">
+            <img src="{% static 'media/images/doctor5.jpg' %}" alt="">
             <h3>MNO</h3>
             <span>expert doctor</span>
             <div class="share">
@@ -134,7 +141,7 @@
                 </div>
         </div>
         <div class="box">
-            <img src="images/doctor5.jpg" alt="">
+            <img src="{% static 'media/images/doctor5.jpg' %}" alt="">
             <h3>PQR</h3>
             <span>expert doctor</span>
             <div class="share">
@@ -154,12 +161,12 @@
 
 <section class="appointment" id="appointment">
 
-    <h1 class="heading"> <span>appointment</span> now </h1>    
+    <h1 class="heading"> <span>Appointment</span> Now </h1>    
 
     <div class="row">
 
         <div class="image">
-            <img src="images/appointment.jpg" alt="">
+            <img src="{% static 'media/images/appointment.jpg' %}" alt="">
         </div>
       <div>  
             <h3>Make appointment</h3>
@@ -177,12 +184,12 @@
 
 <section class="review" id="review">
     
-    <h1 class="heading"> client's <span>review</span> </h1>
+    <h1 class="heading"> Client's <span>Review</span> </h1>
 
     <div class="box-container">
 
         <div class="box">
-            <img src="images/doc.png" alt="">
+            <img src="{% static 'media/images/doc.png' %}" alt="">
             <h3>ABC</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -195,7 +202,7 @@
         </div>
 
         <div class="box">
-            <img src="images/doc.png" alt="">
+            <img src="{% static 'media/images/doc.png' %}" alt="">
             <h3>DEF</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -208,7 +215,7 @@
         </div>
 
         <div class="box">
-            <img src="images/doc.png" alt="">
+            <img src="{% static 'media/images/doc.png' %}" alt="">
             <h3>GHI</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -221,7 +228,7 @@
         </div>
         
         <div class="box">
-            <img src="images/doc.png" alt="">
+            <img src="{% static 'media/images/doc.png' %}" alt="">
             <h3>JKL</h3>
             <div class="stars">
                 <i class="fas fa-star"></i>
@@ -244,18 +251,18 @@
     <div class="box-container">
 
         <div class="box">
-            <h3>quick links</h3>
-            <a href="#home"> <i class="fas fa-chevron-right"></i> home </a>
-            <a href="#about"> <i class="fas fa-chevron-right"></i> about </a>
-            <a href="#services"> <i class="fas fa-chevron-right"></i> services </a>
-            <a href="#doctors"> <i class="fas fa-chevron-right"></i> doctors </a>
-            <a href="#appointment"> <i class="fas fa-chevron-right"></i> appointment </a>
-            <a href="#review"> <i class="fas fa-chevron-right"></i> review </a>
-            <a href="contact.html"> <i class="fas fa-chevron-right"></i>contactus </a>
+            <h3>Quick Links</h3>
+            <a href="#home"> <i class="fas fa-chevron-right"></i> Home </a>
+            <a href="#about"> <i class="fas fa-chevron-right"></i> About </a>
+            <a href="#services"> <i class="fas fa-chevron-right"></i> Services </a>
+            <a href="#doctors"> <i class="fas fa-chevron-right"></i> Doctors </a>
+            <a href="#appointment"> <i class="fas fa-chevron-right"></i> Appointment </a>
+            <a href="#review"> <i class="fas fa-chevron-right"></i> Review </a>
+            <a href="contact.html"> <i class="fas fa-chevron-right"></i>VContact us </a>
         </div>
 
         <div class="box">
-            <h3>our services</h3>
+            <h3>Our Services</h3>
             <a href="#"> <i class="fas fa-chevron-right"></i> dental care </a>
             <a href="#"> <i class="fas fa-chevron-right"></i> message therapy </a>
             <a href="#"> <i class="fas fa-chevron-right"></i> cardioloty </a>
@@ -264,14 +271,14 @@
         </div>
 
         <div class="box">
-            <h3>appointment info</h3>
+            <h3>Appointment Info</h3>
             <a href="#"> <i class="fas fa-phone-square-alt"></i> +8801688238801 </a>
             <a href="#"> <i class="fas fa-envelope"></i> mounika29@gmail.com </a>
             <a href="#"> <i class="fas fa-map-marker-alt"></i> hyderabad </a>
         </div>
 
         <div class="box">
-            <h3>follow us</h3>
+            <h3>Follow Us</h3>
             <a href="#"> <i class="fab fa-facebook"></i> facebook </a>
             <a href="#"> <i class="fab fa-twitter"></i> twitter </a>
             <a href="#"> <i class="fab fa-instagram"></i> instagram </a>

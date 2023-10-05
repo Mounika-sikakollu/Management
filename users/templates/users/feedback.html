@@ -1,0 +1,38 @@
+{% extends 'users/base2.html' %}
+{% load crispy_forms_tags %}
+{% block content %}
+<h3 class="text-center">Feedback</h3>
+<p>Let us know what you think about our hospital as well as the doctor you consulted.</p>
+<div class="container col-6">
+    <form method="POST">
+        {% csrf_token %}
+          <div class="form-group col-13">
+            <label for="fname">Full Name</label>
+            <input type="text" class="form-control" id="fname" placeholder="Full Name" required>
+          </div>
+        
+          <div class="form-group col-13">
+            <label for="exampleInputEmail">Email</label>
+            <input  name="email" type="email" class="form-control" id="exampleInputEmail" placeholder="name@example.com" aria-describedby="emailHelp" required>
+          </div>
+
+          <div class="form-group col-13">
+            <label for="exampleInputdrname">Doctor Name</label>
+            <input name="drname" type="text" class="form-control" id="exampleInputdrname" placeholder="Dr Name">
+          </div>
+
+          <div class="form-group col-13">
+            <label for="exampleInputservices">Services</label>
+            <input name="services" type="text" class="form-control" id="exampleInputphone_number" placeholder="Services"  required>
+          </div>
+        
+          <div class="form-group col-13">
+            <label for="message" >Message</label>
+            <textarea name="message"class="form-control" id="message" rows="3" placeholder="Write us a message" required></textarea>
+          
+            <!--input name="datef" value="{{feedback.dateSubmitted|date:'Y-m-d'}}" type="date"-->
+            <input type="submit" class="btn btn-succcess btn-lg mt-1 ml-4" value="submit">
+          </div>
+    </form>
+</div>
+{% endblock content %}

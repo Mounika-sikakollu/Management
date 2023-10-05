@@ -1,0 +1,308 @@
+{% extends 'pages/base.html' %}
+{% block content %}
+<!-- services section starts -->
+<section class="services">
+    <h1 class="heading"> our <span>services</span> </h1>
+    <div class="box-container">
+        <div class="box">
+            <i class='fas fa-notes-medical'></i>
+            <h3>free checkups</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more </a>
+        </div>
+        <div class="box">
+            <i class='fas fa-ambulance'></i>
+            <h3>24/7 ambulance</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more</a>
+        </div>
+        <div class="box">
+            <i class='fas fa-user-md'></i>
+            <h3>expert doctors</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more </a>
+        </div>
+        <div class="box">
+            <i class='fas fa-capsules'></i>
+            <h3>medicines</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more </a>
+        </div>
+        <div class="box">
+            <i class='fas fa-bed'></i> 
+            <h3>bed facility</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more </a>
+        </div>
+        <div class="box">
+            <i class='fas fa-bell'></i> 
+            <h3>Emergency Room</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more  </a>
+        </div> 
+        <div class="box">
+            <i class='fas fa-flask'></i>
+            <h3>Laboratory</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more </a>
+        </div>
+        <div class="box">
+            <i class='fas fa-syringe'></i>
+            <h3 >Vaccination</h3>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
+            <a href="#" class="btn"> learn more </a>
+        </div>
+    </div>
+</section>
+<script>
+  function show1() {
+   document.getElementById('content1').style.height="400px";
+   document.getElementById('content1').style.display="block";
+   document.getElementById('show1').style.display="none";}
+   function hide1() {
+   document.getElementById('content1').style.height="0px";
+   document.getElementById('content1').style.display="none";
+   document.getElementById('show1').style.display="none";
+ }
+ function show2() {
+   document.getElementById('content2').style.height="400px";
+   document.getElementById('content2').style.display="block";
+   document.getElementById('show2').style.display="none";}
+   function hide2() {
+   document.getElementById('content2').style.height="0px";
+   document.getElementById('content2').style.display="none";
+   document.getElementById('show2').style.display="inline";
+ }
+ function show3() {
+   document.getElementById('content3').style.height="400px";
+   document.getElementById('content3').style.display="block";
+   document.getElementById('show3').style.display="none";}
+   function hide3() {
+   document.getElementById('content3').style.height="0px";
+   document.getElementById('content3').style.display="none";
+   document.getElementById('show3').style.display="inline";
+ }function show4() {
+   document.getElementById('content4').style.height="400px";
+   document.getElementById('content4').style.display="block";
+   document.getElementById('show4').style.display="none";}
+   function hide4() {
+   document.getElementById('content4').style.height="0px";
+   document.getElementById('content4').style.display="none";
+   document.getElementById('show4').style.display="inline";
+ }function show5() {
+   document.getElementById('content5').style.height="400px";
+   document.getElementById('content5').style.display="block";
+   document.getElementById('show5').style.display="none";}
+   function hide5() {
+   document.getElementById('content5').style.height="0px";
+   document.getElementById('content5').style.display="none";
+   document.getElementById('show5').style.display="inline";
+ }function show6() {
+   document.getElementById('content6').style.height="400px";
+   document.getElementById('content6').style.display="block";
+   document.getElementById('show6').style.display="none";}
+   function hide6() {
+   document.getElementById('content6').style.height="0px";
+   document.getElementById('content6').style.display="none";
+   document.getElementById('show6').style.display="inline";
+ }</script>
+<!-- services section ends -->
+<div class="ser" >       
+        <!-- Trigger/Open The Modal -->
+        <button class="myBtn_multi" id="show" onclick="show1()" >Cardiologist <i class="fas fa-heartbeat"></i></button>
+
+          <!-- Trigger/Open The Modal -->
+          <button class="myBtn_multi" id="show" onclick="show2()" >Gastroenterology</button>
+
+           <!-- Trigger/Open The Modal -->
+           <button class="myBtn_multi" id="show" onclick="show3()" >Nephrology</button>
+
+           <!-- Trigger/Open The Modal -->
+         <button class="myBtn_multi" id="show" onclick="show4()">Psychiatry</button>
+         
+           <!-- Trigger/Open The Modal -->
+        <button class="myBtn_multi" id="show" onclick="show5()" >Pulmonology<i class="fas fa-lungs-virus"></i></button>
+
+          <!-- Trigger/Open The Modal -->
+          <button class="myBtn_multi" id="show" onclick="show6()">Orthopedic<i class="fas fa-bone"></i></button>
+
+        <!-- The Modal -->
+        <div class="modal modal_multi" id="content1">
+          <!-- Modal content -->
+          <div class="modal-content">
+            <button class="myBtn_multii" id="hide" onclick="hide1()" >Back</button>
+
+            <button class="myBtn_multi"  >Cardilogist <i class="fas fa-heartbeat"></i></button>
+            <p><b>Cardiologist:</b>
+                        <em>Cardiologist is the study of the heart. Cardiologist is a branch of medicine that deals with disorders of the heart and the cardiovascular system.
+                        </em></p>
+                    <table>
+                    <tr>
+                    <th>Doctors are Avaliable  for Cardiologist : 5 </th> <th> Active:3 (Mon-friday)</th> <th>InActive:2 (Sat-Sunday)</th></tr>
+                    <tr><th> Doctors Name</th> <th> Doctors Experiences</th> <th> Doctors Timing</th></tr>
+                    <tr><td> Dr.sunil's </td> <td>4</td><td>8:00-11:30 AM</td></tr>
+                    <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                    <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                    <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                    <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                    </table>
+                    <p>Dear Sir/Madam if you want to consult a doctor,click the button below and contact us for more. <br>Thank You for choosing. </p>
+                    <button>Appointment</button>
+        </div></div>
+
+
+                      <!-- The Modal -->
+         <div  class="modal modal_multi" id="content2">
+                      <!-- Modal content -->
+        <div class="modal-content">
+          <button class="myBtn_multii" id="hide" onclick="hide2()" >Back</button>
+
+          <button class="myBtn_multi"  >Gastroenterology</button>
+                    <p><b>Gastroenterology:</b>
+                   <em>The branch of medicine that deals with the diagnosis and treatment of disorders of the gastrointestinal tract and related organs.
+                   </em> </p>
+                   <table>
+                    <tr>
+                    <th>Doctors are Avaliable  for gastroenterology : 5  </th>
+                    <th> Active:3 (Mon-friday)</th>
+                    <th>Inactive:2 (Sat-Sunday)</th></tr>
+                   <tr><th> Doctors Name</th>
+                   <th> Doctors Experiences</th>
+                   <th> Doctors Timing</th>
+                   </tr>
+                   <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                   <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                   <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                   <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                   <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+                    </table>
+                    <p>Dear Sir/Madam if you would like to consult a doctor,click the button below and contact us for more information.<br>Thank You for choosing. </p>
+                    <button>Appointment</button>      
+         </div> </div>
+
+                   
+   <!-- The Modal-->
+   <div  class="modal modal_multi" id="content3">
+    <!-- Modal content -->
+        <div class="modal-content">
+          <button class="myBtn_multii" id="hide" onclick="hide3()" >Back</button>
+
+          <button class="myBtn_multi">Nephrology</button>
+         <p><b>Nephrology:</b>
+        <em>The branch of medicine that deals with the physiology and diseases of the kidneys.
+       </em> </p>
+       <table>
+         <tr>
+         <th>Doctors are Avaliable  for nephrology : 5  </th>
+         <th> Active:3 (Mon-friday)</th>
+         <th>Inactive:2 (Sat-Sunday)</th></tr>
+     <tr><th> Doctors Name</th>
+     <th> Doctors Experiences</th>
+     <th> Doctors Timing</th>
+     </tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+         </table>
+         <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
+         <button>Appointment</button></div></div>
+        
+
+          <!-- The Modal-->
+        <div class="modal modal_multi" id="content4" >
+          <!-- Modal content -->
+         <div class="modal-content">
+          <button class="myBtn_multii" id="hide" onclick="hide4()" >Back</button>
+
+          <button class="myBtn_multi">Psychiatry</button>
+         
+         <p><b>Psychiatry:</b>
+        <em>Psychiatry is the branch of medicine focused on the diagnosis, treatment and prevention of mental, emotional and behavioral disorders.<br>
+          A psychiatrist is a medical doctor (an M.D. or D.O.) who specializes in mental health, including substance use disorders. <br>
+          Psychiatrists are qualified to assess both the mental and physical aspects of psychological problems.
+       </em> </p>
+       <table>
+         <tr>
+         <th>Doctors are Avaliable  for cardiology : 5  </th>
+         <th> Active:3 (Mon-friday)</th>
+         <th>Inactive:2 (Sat-Sunday)</th></tr>
+     <tr><th> Doctors Name</th>
+     <th> Doctors Experiences</th>
+     <th> Doctors Timing</th>
+     </tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+         </table>
+         <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
+         <button>Appointment</button>
+         </div>
+        </div>
+
+        
+          <!-- The Modal--> 
+        <div class="modal modal_multi" id="content5">
+          <!-- Modal content -->
+         <div class="modal-content">
+          <button class="myBtn_multii" id="hide" onclick="hide5()" >Back</button>
+
+          <button class="myBtn_multi">Pulmonology<i class="fas fa-lungs-virus"></i></button>
+          
+         <p><b>Pulmonology:</b>
+        <em> (PUL-muh-NAH-loh-jist) A doctor who has special training in diagnosing and treating diseases of the lungs. Also called pulmonary specialist.
+       </em> </p>
+       <table>
+         <tr>
+         <th>Doctors are Avaliable  for cardiology : 5  </th>
+         <th> Active:3 (Mon-friday)</th>
+         <th>Inactive:2 (Sat-Sunday)</th></tr>
+     <tr><th> Doctors Name</th>
+     <th> Doctors Experiences</th>
+     <th> Doctors Timing</th>
+     </tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+         </table>
+         <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
+         <button>Appointment</button>
+        </div>
+        </div>
+
+         <!-- The Modal-->
+         <div  class="modal modal_multi" id="content6">
+          <!-- Modal content -->
+        <div class="modal-content">
+
+          <button class="myBtn_multii" id="hide" onclick="hide6()" >Back</button>
+
+          <button class="myBtn_multi" >Orthopedic<i class="fas fa-bone"></i></button>
+         <p><b>Orthopedic:</b>
+        <em>A doctor who specializes in treating ailments that concerns your bones, joints, ligaments, nerves and tendons.</em> </p>
+       <table>
+         <tr>
+         <th>Doctors are Avaliable  for cardiology : 5  </th>
+         <th> Active:3 (Mon-friday)</th>
+         <th>Inactive:2 (Sat-Sunday)</th></tr>
+     <tr><th> Doctors Name</th>
+     <th> Doctors Experiences</th>
+     <th> Doctors Timing</th>
+     </tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
+    </table>
+         <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
+         <button>Appointment</button>
+        </div>
+        </div>
+</div>
+{% endblock content %}

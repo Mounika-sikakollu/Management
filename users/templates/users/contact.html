@@ -1,0 +1,45 @@
+{% extends 'users/base2.html' %}
+{% block content %}
+<div class="container-fluid">
+<h3 class="text-muted"> Contact Us </h3>
+    <p>Questions, thoughts or opinions? Please use the form below to let us know what you're thinking.</p>
+<section  class="boxape"><!--class="consect"-->
+  <Address>
+    <i class="fas fa-location-arrow"></i>
+    <b>Address:</b>
+    Sreeguru towers,<br>Second floor,<br> Gopuram road, opp.<br> Union bank of India, <br>Puttaparthi,<br> Andhra Pradesh 515134
+  </Address> ___________________________<br>
+    <i class="fas fa-phone-square-alt"></i>
+     <b >Phone</b>:+91-8735208641 <br><br>
+    <b>Help line</b>:011-23978046 <br>___________________________
+   <br> <i class="fas fa-envelope"><b>E-mail:</b></i>surettust234@gmail.com
+</section>
+<div class="container  col-6">
+  <form  method="post" class="was-validated">
+    {% csrf_token %}
+  <div class="form-group col-12">
+    <label for="fname">Full Name</label>
+    <input name="name" type="text" class="form-control" id="fname" placeholder="Full Name" required>
+  </div>
+
+  <div class="form-group col-12">
+    <label for="exampleInputEmail">Email</label>
+    <input  name="email" type="email" class="form-control" id="exampleInputEmail" placeholder="name@example.com" aria-describedby="emailHelp" required>
+  </div>
+
+  <div class="form-group col-12">
+    <label for="exampleInputphone_number" >Phone_number</label>
+    <input name="phone_number" type="text" class="form-control" id="exampleInputphone_number" placeholder="Phone Number"  required>
+  </div>
+
+  <div class="form-group col-12">
+    <label for="message" >Message</label>
+    <textarea name="message"class="form-control" id="message" rows="3" placeholder="Write us a message" required></textarea>
+    <a class="mr-2" href="#">{{contact.author}}</a>
+    <input type="submit" class="btn btn-succcess btn-lg mt-1 ml-4" value="submit">
+  </div>
+ </form>
+</div>
+</div>
+{% endblock content %}
+

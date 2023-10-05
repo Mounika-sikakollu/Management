@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta  charset="UTF-8">
+        <meta http-equiv="X-UA-Compatiable" content="IE=edge">
+        <meta name="viewport"content="width=device-width,initial-scale=1.0">
+        <title>Hospital Management System</title>
+        <link rel="stylesheet" href="{% static 'css/main.css' %}">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css">
+      </head>
+    <body>
+
+      <header class="header">
+        <nav class="navbar-one flex">
+           <div class="right flex">
+                 <div><i class="fab fa-facebook-f"></i>
+                   <a href="#facebook"></a></div>
+                 <div><i class="fab fa-twitter"> </i>  
+                   <a href="#twitter">  </a></div>
+                 <div><i class="fab fa-instagram"> </i>
+                   <a href="#instagram"></a></div>
+                 <div><i class="fab fa-linkedin"> </i> 
+                   <a href="#linkedin"></a></div>
+           </div>
+          <a href="{% url 'contact' %}" class="contact"> Contact Us</a></i>
+        </nav>
+        <nav class="navbar-second flex">
+         <ol class="flex">
+           <li><img src="{% static 'media/images/heart.png' %} " id="logo" alt="heart.png"></li>
+           <li><h2>SURE Trust</h2></li>
+         </ol>
+         <ul class="flex">
+             <li><a href="{% url 'index' %}">Home </a></li>
+             <li><a href="{% url 'about' %}">About Us</a></li>
+             <li><a href="{% url 'services' %}">Services</a></li>
+             <li><a href="{% url 'feedback' %}">Feedback</a></li>
+             <li><a href="{% url 'update' %}">Update</a></li>
+             <li><a href="{% url 'login'%}">Login </a></li> 
+           </ul>
+           </nav>
+       <div id="menu-btn" class="fas fa-bars"></div>
+   </header>
+     
+{% block content %} 
+
+{% endblock content %}

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post
-# Register your models here.
+from .models import Feedback,Contact
 
-admin.site.register(Post)
+admin.site.register(Feedback)
+admin.site.register(Contact)

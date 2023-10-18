@@ -34,6 +34,7 @@
     <li><img src="{% static 'media/images/heart.png' %}" id="logo" alt="heart.png" ></li></ul>
     <ul class="navbar-nav"class="justify-content-center">
     <li><h2 class="font-weight-bold heading">SURE Trust</h2></li>
+  
   </ul>
    <ul class="navbar-nav" class="justify-content-end-flex">
      <li class="nav-item">
@@ -46,7 +47,7 @@
        <a class="nav-link" href="{% url 'services' %}">Services</a>
      </li>
      <li class="nav-item">
-      <a class="nav-link" href="{% url 'update' %}">Update</a>
+      <a class="nav-link" href="{% url 'news' %}">News</a>
     </li>
     {% if user.is_authenticated %}
      <li class="nav-item"><a class="nav-link" href="{% url 'feedback' %}">Feedback</a></li>

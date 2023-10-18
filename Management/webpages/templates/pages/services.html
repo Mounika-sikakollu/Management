@@ -2,55 +2,55 @@
 {% block content %}
 <!-- services section starts -->
 <section class="services">
-    <h1 class="heading"> our <span>services</span> </h1>
+    <h1 class="heading"> Our <span>Services</span> </h1>
     <div class="box-container">
         <div class="box">
             <i class='fas fa-notes-medical'></i>
-            <h3>free checkups</h3>
+            <h3>Free Checkups</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More </a>
         </div>
         <div class="box">
             <i class='fas fa-ambulance'></i>
-            <h3>24/7 ambulance</h3>
+            <h3>24/7 Ambulance</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more</a>
+            <a href="{% url 'more' %}" class="btn"> Learn More</a>
         </div>
         <div class="box">
             <i class='fas fa-user-md'></i>
-            <h3>expert doctors</h3>
+            <h3>Expert Doctors</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More </a>
         </div>
         <div class="box">
             <i class='fas fa-capsules'></i>
-            <h3>medicines</h3>
+            <h3>Medicines</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More </a>
         </div>
         <div class="box">
             <i class='fas fa-bed'></i> 
-            <h3>bed facility</h3>
+            <h3>Bed Facility</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More </a>
         </div>
         <div class="box">
             <i class='fas fa-bell'></i> 
             <h3>Emergency Room</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more  </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More  </a>
         </div> 
         <div class="box">
             <i class='fas fa-flask'></i>
             <h3>Laboratory</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More </a>
         </div>
         <div class="box">
             <i class='fas fa-syringe'></i>
             <h3 >Vaccination</h3>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ad, omnis.</p>
-            <a href="#" class="btn"> learn more </a>
+            <a href="{% url 'more' %}" class="btn"> Learn More </a>
         </div>
     </div>
 </section>
@@ -109,7 +109,7 @@
 <!-- services section ends -->
 <div class="ser" >       
         <!-- Trigger/Open The Modal -->
-        <button class="myBtn_multi" id="show" onclick="show1()" >Cardiologist <i class="fas fa-heartbeat"></i></button>
+        <button class="myBtn_multi" id="show" onclick="show1()" >Cardiologist </button>
 
           <!-- Trigger/Open The Modal -->
           <button class="myBtn_multi" id="show" onclick="show2()" >Gastroenterology</button>
@@ -121,10 +121,10 @@
          <button class="myBtn_multi" id="show" onclick="show4()">Psychiatry</button>
          
            <!-- Trigger/Open The Modal -->
-        <button class="myBtn_multi" id="show" onclick="show5()" >Pulmonology<i class="fas fa-lungs-virus"></i></button>
+        <button class="myBtn_multi" id="show" onclick="show5()" >Pulmonology</button>
 
           <!-- Trigger/Open The Modal -->
-          <button class="myBtn_multi" id="show" onclick="show6()">Orthopedic<i class="fas fa-bone"></i></button>
+          <button class="myBtn_multi" id="show" onclick="show6()">Orthopedic</button>
 
         <!-- The Modal -->
         <div class="modal modal_multi" id="content1">
@@ -132,7 +132,7 @@
           <div class="modal-content">
             <button class="myBtn_multii" id="hide" onclick="hide1()" >Back</button>
 
-            <button class="myBtn_multi"  >Cardilogist <i class="fas fa-heartbeat"></i></button>
+            <button class="myBtn_multi">Cardilogist </button>
             <p><b>Cardiologist:</b>
                         <em>Cardiologist is the study of the heart. Cardiologist is a branch of medicine that deals with disorders of the heart and the cardiovascular system.
                         </em></p>
@@ -147,7 +147,7 @@
                     <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
                     </table>
                     <p>Dear Sir/Madam if you want to consult a doctor,click the button below and contact us for more. <br>Thank You for choosing. </p>
-                    <button>Appointment</button>
+                    <button class="btn">Appointment</button>
         </div></div>
 
 
@@ -177,7 +177,7 @@
                    <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
                     </table>
                     <p>Dear Sir/Madam if you would like to consult a doctor,click the button below and contact us for more information.<br>Thank You for choosing. </p>
-                    <button>Appointment</button>      
+                    <button class="btn">Appointment</button>      
          </div> </div>
 
                    
@@ -207,7 +207,7 @@
      <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
          </table>
          <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
-         <button>Appointment</button></div></div>
+         <button class="btn">Appointment</button></div></div>
         
 
           <!-- The Modal-->
@@ -239,7 +239,7 @@
      <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
          </table>
          <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
-         <button>Appointment</button>
+         <button class="btn">Appointment</button>
          </div>
         </div>
 
@@ -250,7 +250,7 @@
          <div class="modal-content">
           <button class="myBtn_multii" id="hide" onclick="hide5()" >Back</button>
 
-          <button class="myBtn_multi">Pulmonology<i class="fas fa-lungs-virus"></i></button>
+          <button class="myBtn_multi">Pulmonology</button>
           
          <p><b>Pulmonology:</b>
         <em> (PUL-muh-NAH-loh-jist) A doctor who has special training in diagnosing and treating diseases of the lungs. Also called pulmonary specialist.
@@ -271,7 +271,7 @@
      <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
          </table>
          <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
-         <button>Appointment</button>
+         <button class="btn">Appointment</button>
         </div>
         </div>
 
@@ -282,7 +282,7 @@
 
           <button class="myBtn_multii" id="hide" onclick="hide6()" >Back</button>
 
-          <button class="myBtn_multi" >Orthopedic<i class="fas fa-bone"></i></button>
+          <button class="myBtn_multi" >Orthopedic</button>
          <p><b>Orthopedic:</b>
         <em>A doctor who specializes in treating ailments that concerns your bones, joints, ligaments, nerves and tendons.</em> </p>
        <table>
@@ -301,7 +301,7 @@
      <tr><td> Dr.sunil's </td><td>4</td><td>8:00-11:30 AM</td></tr>
     </table>
          <p>Dear Madam /Sir  want to consult a doctor,Please click below appointment and more information contact us. <br>Thank You for choosing. </p>
-         <button>Appointment</button>
+         <button class="btn">Appointment</button>
         </div>
         </div>
 </div>

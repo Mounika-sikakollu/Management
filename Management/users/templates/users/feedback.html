@@ -1,7 +1,7 @@
 {% extends 'users/base2.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
-<h3 class="text-center">Feedback</h3>
+<h3 class="title">Feedback</h3>
 <p>Let us know what you think about our hospital as well as the doctor you consulted.</p>
 <div class="container col-6">
     <form method="POST" action="#">
@@ -34,7 +34,7 @@
           <div class="form-group col-13">
             <label for="message" >Message</label>
             <textarea name="message"class="form-control" id="message" rows="3" placeholder="Write us a message" required></textarea>
-            <input type="submit" class="btn btn-succcess btn-lg mt-1 ml-4" value="submit">
+            <input type="submit" class="btn-sub" value="Submit" style="background-color:white!important;">
           </div>
     </form>
 </div>

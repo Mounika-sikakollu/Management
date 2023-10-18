@@ -24,7 +24,6 @@ h2{
     padding-left:0%;
     height: 50px;
     width: 50px;
-    display: flex;
     transition:transform .2s;
     margin-left:5px;
     border: 2px solid white;
@@ -42,8 +41,8 @@ h2{
 .nav-item2{
     position:relative;
     left:1250px;
-    display: flex;
     margin-right: 2rem;
+    justify-content: space-between;
 }
 
 .btn{
@@ -99,7 +98,7 @@ p{
 }
 .container_col-6{
   height: 460px;
-  width: 700px;
+  width: 660px;
   margin-top:1.5rem;
   padding-top:1rem;
   border:1px solid #DB7093;
@@ -137,4 +136,5 @@ p{
   .btn-sub:hover{
     background-color: #DB7093;
   }
+
   

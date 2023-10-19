@@ -8,8 +8,7 @@ class Contact(models.Model):
     email=models.EmailField()
     phone_number=models.IntegerField(help_text="Enter 10 digits numbers")
     message=models.TextField()
-    #author=models.ForeignKey(User,on_delete=models.CASCADE)
-
+   
     def __str__(self):
         return self.name
 
@@ -22,8 +21,7 @@ class Feedback(models.Model):
    services = models.TextField()
    date = models.DateTimeField(default=timezone.now)
    message = models.TextField()
-   #author=models.ForeignKey(User,on_delete=models.CASCADE)
-   
+     
    def __str__(self):
      return self.full_name
 

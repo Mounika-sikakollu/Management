@@ -125,6 +125,8 @@
     margin-left: 100px;
     padding-top:0;
    }
+  
+
   li{
     list-style:none;
   }
@@ -583,7 +585,7 @@
  .box-form{
    margin-top: 1rem;
    width: 660px;
-   height:550px;
+   height:350px;
    border:2px solid palevioletred;
    position:absolute;
    right:40px;
@@ -600,10 +602,10 @@
  }
  
  .appointment .row .btn{
-    padding:1rem 1rem;
+    padding:1rem 4rem;
     position: relative;
     left:40%;
-    margin-bottom:0.3rem;
+    margin-bottom:1rem;
  }
  /* appointmenting section ends  */
  

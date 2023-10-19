@@ -7,17 +7,17 @@ body {
     text-align: center;
     font-size: 2rem;
   }
+.flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
   .navbar1-custom{
     height:40px;
   }
   .navbar-custom{
   background-color: aliceblue;
   height:75px;
-}
-h2{
-    color:palevioletred;
-    position: relative;
-    right:380px;
 }
 #logo {
     border-radius:50px;
@@ -67,9 +67,6 @@ h2{
     border-radius: 3px;
     margin-bottom: 20px;
   }
-  
-
-  
  /* contact.css*/
 .h3{
   color:palevioletred;
